@@ -38,7 +38,14 @@ class Product {
         this._title = newtitle;
     }
 
-
+    sellUnits(quantity) {
+        if (this.stock >= quantity) {
+            this.stock -= quantity;
+            console.log(`${quantity} unidades de ${this._title} vendidas`);
+        } else {
+            console.error(`No hay suficientes unidades de ${this._title} en stock. Solo quedan ${this.stock}`);
+        }
+    }
 }
 
 
@@ -49,5 +56,14 @@ const prod4 = new Product("004", "Zapatos", 500, 10, ["images7.jpg"], true, "Rot
 
 
 prod4.Supplier = "Bomnito";
+
+console.log(prod4);
+
+
+
+
+prod4.sellUnits(3);
+
+
 
 console.log(prod4);
