@@ -31,6 +31,12 @@ class Product {
     sellUnits(units) {
         this.stock = this.stock - units
     }
+    get title() {
+        return this._title;
+    }
+    set title(newtitle) {
+        this._title = newtitle;
+    }
 
 
 }
