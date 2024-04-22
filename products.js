@@ -54,13 +54,14 @@ const prod2 = new Product("002", "Laptop Gamer", 800, 5, ["imagen3.jpg", "imagen
 const prod3 = new Product("003", "Smartwatch Deportivo", 200, 15, ["imagen5.jpg", "imagen6.jpg"], true);
 const prod4 = new Product("004", "Zapatos", 500, 10, ["images7.jpg"], true, "Rotito");
 
+const products = [prod1, prod2, prod3, prod4];
 
 prod4.Supplier = "Bomnito";
 
 console.log(prod4);
 
 
-
+console.log(products);
 
 prod4.sellUnits(3);
 
