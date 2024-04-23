@@ -58,13 +58,7 @@ const products = [prod1, prod2, prod3, prod4];
 
 prod4.Supplier = "Bomnito";
 
-console.log(prod4);
-
 
 console.log(products);
 
-prod4.sellUnits(3);
 
-
-
-console.log(prod4);
